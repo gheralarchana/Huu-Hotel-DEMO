@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 
 const links = [
   ['Home', '/'], ['About Us', '/about-us'], ['Rooms & Suites', '/rooms'],
-  ['Dining & Bar', '/dining'], ['Facilities', '/dining#facilities'], ['Gallery', '/gallery'],
+  ['Facilities', '/facilities'], ['Gallery', '/gallery'],
   ['Location & Access', '/location'], ['Contact', '/contact']
 ] as const;
 
@@ -30,7 +30,7 @@ export function Header() {
           <span><span className="site-brand__name">HU&apos;U</span><span className="site-brand__meta">Gili Trawangan</span></span>
         </Link>
         <nav className="site-nav" aria-label="Primary navigation">
-          {links.map(([label, href]) => <Link key={href} href={href} className={pathname === href || (href === '/dining#facilities' && pathname === '/dining') ? 'active' : ''}>{label}</Link>)}
+          {links.map(([label, href]) => <Link key={href} href={href} className={pathname === href ? 'active' : ''}>{label}</Link>)}
         </nav>
         <div className="site-actions">
           <Link className="site-button" href="/book-now">Book Now</Link>

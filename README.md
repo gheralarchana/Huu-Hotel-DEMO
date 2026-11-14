@@ -24,8 +24,7 @@ npm run build
 - `/`
 - `/about-us`
 - `/rooms`
-- `/dining`
-- `/dining#facilities`
+- `/facilities` (Dining & Bar + Facilities)
 - `/gallery`
 - `/location`
 - `/contact`
