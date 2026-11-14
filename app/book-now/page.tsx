@@ -1,0 +1,4 @@
+import { PageIntro } from '@/components/PageIntro';
+import { BookingForm } from '@/components/BookingForm';
+
+export default function BookNow() { return <><PageIntro eyebrow="Direct Reservation" title="Reserve your stay at HU'U Beach Front." description="Choose your private sanctuary on the shores of Gili Trawangan. Availability and final rates will be connected to the hotel booking system once confirmed." /><section className="content-wrap"><div className="contact-grid"><div><span className="eyebrow">Start your enquiry</span><h2>Find your island rhythm.</h2><p>Submit your preferred dates and room type. This frontend flow does not collect payment details or expose any secret credentials.</p><div className="notice">Placeholder: official availability API, payment provider, and confirmed hotel policies.</div></div><BookingForm /></div></section></>; }
